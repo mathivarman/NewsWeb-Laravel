@@ -1,7 +1,14 @@
 @extends('layouts.main')
 @section('title', '404 Error')
+@push('txtcolor')
+<style>
+    #head{
+        color: rgb(137, 97, 147);
+    }
+</style>
+@endpush
 @section('content')
-  <!-- 404 start-->
+    <!-- 404 start-->
     <section class="wrap__section">
         <div class="container">
             <div class="row">
@@ -186,6 +193,4 @@
     </section>
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <script type="text/javascript" src="{{ asset('js/index.bundle.js') }}"></script>
-    @endsection
+@endsection

@@ -1,7 +1,13 @@
 @extends('layouts.main')
 @section('title', 'Blog Details')
+@push('txtcolor')
+<style>
+    #head{
+        color: rgb(84, 203, 236);
+    }
+</style>
+@endpush
 @section('content')
-
     <section class="pb-80">
         <div class="container">
             <div class="row">
@@ -378,8 +384,7 @@
                                 </p>
                                 <p class="comment-form-comment">
                                     <label for="comment">Comment</label>
-                                    <textarea name="comment" id="comment" cols="45" rows="5" maxlength="65525"
-                                        required="required"></textarea>
+                                    <textarea name="comment" id="comment" cols="45" rows="5" maxlength="65525" required="required"></textarea>
                                 </p>
                                 <p class="comment-form-author">
                                     <label>Name <span class="required">*</span></label>
@@ -401,7 +406,8 @@
                                         span I comment.</label>
                                 </p>
                                 <p class="form-submit mb-0">
-                                    <input type="submit" name="submit" id="submit" class="submit" value="Post Comment">
+                                    <input type="submit" name="submit" id="submit" class="submit"
+                                        value="Post Comment">
                                 </p>
                             </form>
                         </div>
@@ -798,7 +804,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                             </div>
@@ -1135,6 +1142,4 @@
     </section>
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <script type="text/javascript" src="{{ asset('js/index.bundle.js') }}"></script>
-    @endsection
+@endsection

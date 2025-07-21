@@ -1,7 +1,14 @@
 @extends('layouts.main')
 @section('title', 'Blog - World News')
+@push('txtcolor')
+<style>
+    #head{
+        color: rgb(111, 59, 59);
+    }
+</style>
+@endpush
 @section('content')
-     <section class="blog_pages">
+    <section class="blog_pages">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -89,7 +96,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                                 <!-- Post Article -->
@@ -126,7 +134,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                                 <!-- Post Article -->
@@ -163,7 +172,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                                 <!-- Post Article -->
@@ -200,7 +210,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +250,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                                 <!-- Post Article -->
@@ -276,7 +288,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                                 <!-- Post Article -->
@@ -313,7 +326,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                                 <!-- Post Article -->
@@ -350,7 +364,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
 
@@ -516,7 +531,8 @@
                                             iaculis placerat sollicitudin ut
                                             est. In fringilla dui dui.
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read more</a>
+                                        <a href="#" class="btn btn-outline-primary mb-4 text-capitalize"> read
+                                            more</a>
                                     </div>
                                 </div>
                             </div>
@@ -844,6 +860,4 @@
     </section>
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <script type="text/javascript" src="{{ asset('js/index.bundle.js') }}"></script>
 @endsection

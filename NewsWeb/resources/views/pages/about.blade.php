@@ -1,7 +1,14 @@
 @extends('layouts.main')
 @section('title', 'About Us')
+@push('txtcolor')
+<style>
+    #head{
+        color: red;
+    }
+</style>
+@endpush
 @section('content')
-   <section>
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -55,10 +62,6 @@
                             passages, and more recently with desktop publishing software like Aldus PageMaker including
                             versions of Lorem Ipsum.
                         </p>
-
-
-
-
                         <p>
 
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -336,8 +339,5 @@
             </footer>
         </div>
     </section>
-
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <script type="text/javascript" src="{{ asset('js/index.bundle.js') }}"></script>
-    @endsection
+@endsection

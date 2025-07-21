@@ -211,6 +211,4 @@
     </section>
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <script type="text/javascript" src="{{ asset('js/index.bundle.js') }}"></script>
 @endsection

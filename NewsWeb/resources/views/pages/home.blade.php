@@ -1,9 +1,14 @@
 @extends('layouts.main')
-
 @section('title', 'Home')
-
+@push('txtcolor')
+<style>
+    #head{
+        color: rgb(201, 154, 154);
+    }
+</style>
+@endpush
 @section('content')
-   <!-- Tranding news  carousel-->
+    <!-- Tranding news  carousel-->
     <section class="bg-light">
         <div class="container">
             <div class="row">
@@ -253,7 +258,8 @@
                                 <div class="card__post">
                                     <div class="card__post__body">
                                         <a href="blog_details.html">
-                                            <img src="{{ asset('images/newsimage1.png') }}" class="img-fluid" alt="">
+                                            <img src="{{ asset('images/newsimage1.png') }}" class="img-fluid"
+                                                alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
                                             <div class="card__post__category">
@@ -292,7 +298,8 @@
                                 <div class="card__post">
                                     <div class="card__post__body">
                                         <a href="blog_details.html">
-                                            <img src="{{ asset('images/newsimage2.png') }}" class="img-fluid" alt="">
+                                            <img src="{{ asset('images/newsimage2.png') }}" class="img-fluid"
+                                                alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
                                             <div class="card__post__category">
@@ -414,7 +421,8 @@
                                 <div class="article__entry">
                                     <div class="article__image">
                                         <a href="#">
-                                            <img src="{{ asset('images/newsimage5.png') }}" alt="" class="img-fluid">
+                                            <img src="{{ asset('images/newsimage5.png') }}" alt=""
+                                                class="img-fluid">
                                         </a>
                                     </div>
                                     <div class="article__content">
@@ -444,7 +452,8 @@
                                 <div class="article__entry">
                                     <div class="article__image">
                                         <a href="#">
-                                            <img src="{{ asset('images/newsimage6.png') }}" alt="" class="img-fluid">
+                                            <img src="{{ asset('images/newsimage6.png') }}" alt=""
+                                                class="img-fluid">
                                         </a>
                                     </div>
                                     <div class="article__content">
@@ -504,7 +513,8 @@
                                 <div class="article__entry">
                                     <div class="article__image">
                                         <a href="#">
-                                            <img src="{{ asset('images/newsimage8.png') }}" alt="" class="img-fluid">
+                                            <img src="{{ asset('images/newsimage8.png') }}" alt=""
+                                                class="img-fluid">
                                         </a>
                                     </div>
                                     <div class="article__content">
@@ -596,7 +606,8 @@
                                 <div class="card__post ">
                                     <div class="card__post__body card__post__transition">
                                         <a href="blog_details.html">
-                                            <img src="{{ asset('images/newsimage8.png') }}" class="img-fluid" alt="">
+                                            <img src="{{ asset('images/newsimage8.png') }}" class="img-fluid"
+                                                alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
                                             <div class="card__post__category">
@@ -633,7 +644,8 @@
                                 <div class="card__post ">
                                     <div class="card__post__body card__post__transition">
                                         <a href="blog_details.html">
-                                            <img src="{{ asset('images/newsimage9.png') }}" class="img-fluid" alt="">
+                                            <img src="{{ asset('images/newsimage9.png') }}" class="img-fluid"
+                                                alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
                                             <div class="card__post__category">
@@ -674,7 +686,8 @@
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
                                                 <a href="blog_details.html">
-                                                    <img src="{{ asset('images/news1.jpg') }}" class="img-fluid" alt="">
+                                                    <img src="{{ asset('images/news1.jpg') }}" class="img-fluid"
+                                                        alt="">
                                                 </a>
                                             </div>
 
@@ -713,7 +726,8 @@
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
                                                 <a href="blog_details.html">
-                                                    <img src="{{ asset('images/news2.jpg') }}" class="img-fluid" alt="">
+                                                    <img src="{{ asset('images/news2.jpg') }}" class="img-fluid"
+                                                        alt="">
                                                 </a>
                                             </div>
 
@@ -755,7 +769,8 @@
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
                                                 <a href="blog_details.html">
-                                                    <img src="{{ asset('images/news3.jpg') }}" class="img-fluid" alt="">
+                                                    <img src="{{ asset('images/news3.jpg') }}" class="img-fluid"
+                                                        alt="">
                                                 </a>
                                             </div>
 
@@ -793,7 +808,8 @@
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
                                                 <a href="blog_details.html">
-                                                    <img src="{{ asset('images/news4.jpg') }}" class="img-fluid" alt="">
+                                                    <img src="{{ asset('images/news4.jpg') }}" class="img-fluid"
+                                                        alt="">
                                                 </a>
                                             </div>
 
@@ -954,7 +970,8 @@
                             <div class="article__entry">
                                 <div class="article__image">
                                     <a href="#">
-                                        <img src="{{ asset('images/newsimage9.png') }}" alt="" class="img-fluid">
+                                        <img src="{{ asset('images/newsimage9.png') }}" alt=""
+                                            class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="article__content">
@@ -985,7 +1002,8 @@
                             <div class="article__entry">
                                 <div class="article__image">
                                     <a href="#">
-                                        <img src="{{ asset('images/newsimage8.png') }}" alt="" class="img-fluid">
+                                        <img src="{{ asset('images/newsimage8.png') }}" alt=""
+                                            class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="article__content">
@@ -1016,7 +1034,8 @@
                             <div class="article__entry">
                                 <div class="article__image">
                                     <a href="#">
-                                        <img src="{{ asset('images/newsimage7.png') }}" alt="" class="img-fluid">
+                                        <img src="{{ asset('images/newsimage7.png') }}" alt=""
+                                            class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="article__content">
@@ -1047,7 +1066,8 @@
                             <div class="article__entry">
                                 <div class="article__image">
                                     <a href="#">
-                                        <img src="{{ asset('images/newsimage6.png') }}" alt="" class="img-fluid">
+                                        <img src="{{ asset('images/newsimage6.png') }}" alt=""
+                                            class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="article__content">
@@ -1078,7 +1098,8 @@
                             <div class="article__entry">
                                 <div class="article__image">
                                     <a href="#">
-                                        <img src="{{ asset('images/newsimage5.png') }}" alt="" class="img-fluid">
+                                        <img src="{{ asset('images/newsimage5.png') }}" alt=""
+                                            class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="article__content">
@@ -1125,7 +1146,8 @@
                                         <div class="article__entry">
                                             <div class="article__image">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage1.png') }}" alt="" class="img-fluid">
+                                                    <img src="{{ asset('images/newsimage1.png') }}" alt=""
+                                                        class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="article__content">
@@ -1156,7 +1178,8 @@
                                         <div class="article__entry">
                                             <div class="article__image">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage2.png') }}" alt="" class="img-fluid">
+                                                    <img src="{{ asset('images/newsimage2.png') }}" alt=""
+                                                        class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="article__content">
@@ -1187,7 +1210,8 @@
                                         <div class="article__entry">
                                             <div class="article__image">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage3.png') }}" alt="" class="img-fluid">
+                                                    <img src="{{ asset('images/newsimage3.png') }}" alt=""
+                                                        class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="article__content">
@@ -1220,7 +1244,8 @@
                                         <div class="article__entry">
                                             <div class="article__image">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage4.png') }}" alt="" class="img-fluid">
+                                                    <img src="{{ asset('images/newsimage4.png') }}" alt=""
+                                                        class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="article__content">
@@ -1251,7 +1276,8 @@
                                         <div class="article__entry">
                                             <div class="article__image">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage6.png') }}" alt="" class="img-fluid">
+                                                    <img src="{{ asset('images/newsimage6.png') }}" alt=""
+                                                        class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="article__content">
@@ -1282,7 +1308,8 @@
                                         <div class="article__entry">
                                             <div class="article__image">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage6.png') }}" alt="" class="img-fluid">
+                                                    <img src="{{ asset('images/newsimage6.png') }}" alt=""
+                                                        class="img-fluid">
                                                 </a>
                                             </div>
                                             <div class="article__content">
@@ -1328,7 +1355,8 @@
                                         <div class="col-md-5">
                                             <div class="card__post__transition">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage6.png') }}" class="img-fluid w-100" alt="">
+                                                    <img src="{{ asset('images/newsimage6.png') }}"
+                                                        class="img-fluid w-100" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -1376,7 +1404,8 @@
                                         <div class="col-md-5">
                                             <div class="card__post__transition">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage8.png') }}" class="img-fluid w-100" alt="">
+                                                    <img src="{{ asset('images/newsimage8.png') }}"
+                                                        class="img-fluid w-100" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -1423,7 +1452,8 @@
                                         <div class="col-md-5">
                                             <div class="card__post__transition">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage9.png') }}" class="img-fluid w-100" alt="">
+                                                    <img src="{{ asset('images/newsimage9.png') }}"
+                                                        class="img-fluid w-100" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -1471,7 +1501,8 @@
                                         <div class="col-md-5">
                                             <div class="card__post__transition">
                                                 <a href="#">
-                                                    <img src="{{ asset('images/newsimage1.png') }}" class="img-fluid w-100" alt="">
+                                                    <img src="{{ asset('images/newsimage1.png') }}"
+                                                        class="img-fluid w-100" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -1527,7 +1558,8 @@
                                     <div class="article__entry">
                                         <div class="article__image">
                                             <a href="#">
-                                                <img src="{{ asset('images/newsimage2.png') }}" alt="" class="img-fluid">
+                                                <img src="{{ asset('images/newsimage2.png') }}" alt=""
+                                                    class="img-fluid">
                                             </a>
                                         </div>
                                         <div class="article__content">
@@ -1566,7 +1598,8 @@
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
                                                 <a href="blog_details.html">
-                                                    <img src="{{ asset('images/news1.jpg') }}" class="img-fluid" alt="">
+                                                    <img src="{{ asset('images/news1.jpg') }}" class="img-fluid"
+                                                        alt="">
                                                 </a>
                                             </div>
 
@@ -1603,7 +1636,8 @@
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
                                                 <a href="blog_details.html">
-                                                    <img src="{{ asset('images/news2.jpg') }}" class="img-fluid" alt="">
+                                                    <img src="{{ asset('images/news2.jpg') }}" class="img-fluid"
+                                                        alt="">
                                                 </a>
                                             </div>
 
@@ -1775,7 +1809,8 @@
                                 <h4 class="border_section">Advertise</h4>
                                 <a href="#">
                                     <figure>
-                                        <img src="{{ asset('images/newsimage3.png') }}" alt="" class="img-fluid">
+                                        <img src="{{ asset('images/newsimage3.png') }}" alt=""
+                                            class="img-fluid">
                                     </figure>
                                 </a>
                             </aside>
