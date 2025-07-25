@@ -2,9 +2,16 @@
 
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\SubjectController;
+use App\Http\Controllers\GradeController;
 
-Route::get('/',[UserController::class,'home']);
-Route::get('/about',[UserController::class,'about'])->name('about');
+Route::resource('students', StudentController::class);
+Route::resource('subjects', SubjectController::class);
+Route::resource('grades', GradeController::class);
+
+Route::get('/home',[UserController::class,'home']);
+Route::get('about/{name?}',[UserController::class,'about'])->name('about');
 Route::get('blog',[UserController::class,'blog'])->name('blog');
 Route::get('/blogdetails',[UserController::class,'blogdetails'])->name('blogdetails');
 Route::get('/error',[UserController::class,'error'])->name('error');
