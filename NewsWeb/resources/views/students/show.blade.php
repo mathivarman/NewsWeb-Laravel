@@ -41,6 +41,18 @@
                             <td class="text-center align-middle">Admission Date : {{ $student->admission_date }}</td>
                         </tr>
                         <tr style="background: #f7fbff;">
+                            <td class="text-center align-middle">Grade : {{ $student->Grade->grade_name }}</td>
+                        </tr>
+                        <tr style="background: #f7fbff;">
+                            <td class="text-center align-middle">Subjects :
+                                <ul>
+                                    @foreach($student_subjects as $subject)
+                                        <br>{{ $subject->subject_name }}</br>
+                                    @endforeach
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr style="background: #f7fbff;">
                             <td class="text-center align-middle">
                                 <a href="/students/{{ $student->id }}/edit" class="btn btn-primary btn-sm me-1">Edit</a>
                                 <a href="/students" class="btn btn-info btn-sm me-1 text-white">Back</a>

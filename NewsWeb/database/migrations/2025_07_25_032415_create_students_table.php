@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('admission_no',50)->unique();
             $table->string('student_name',50);
             $table->string('father_name',50);
+            
             $table->string('gender',10);
             $table->string('nic_no',12);
             $table->string('telephone_no',20);

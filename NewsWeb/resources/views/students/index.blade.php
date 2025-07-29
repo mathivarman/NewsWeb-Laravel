@@ -4,12 +4,13 @@
 <section class="wrap__section">
         <div class="container">
             <div class="row">
-                <table class="table table-bordered table-hover shadow rounded" style="background: #fff;">
+            <table class="table table-bordered table-hover shadow rounded" style="background: #fff;">
             <thead>
                 <tr class="text-center" style="background: #1976d2;">
                     <th class="text-white" style="font-size: 1.1rem; letter-spacing: 1px;">Admission No</th>
                     <th class="text-white" style="font-size: 1.1rem; letter-spacing: 1px;">Student Name</th>
                     <th class="text-white" style="font-size: 1.1rem; letter-spacing: 1px;">Father Name</th>
+                    <th class="text-white" style="font-size: 1.1rem; letter-spacing: 1px;">Grade</th>
                     <th class="text-white" style="font-size: 1.1rem; letter-spacing: 1px;">Gender</th>
                     <th class="text-white" style="font-size: 1.1rem; letter-spacing: 1px;">NIC No</th>
                     <th class="text-white" style="font-size: 1.1rem; letter-spacing: 1px;">Telephone No</th>
@@ -25,6 +26,7 @@
                     <td class="text-center align-middle">{{ $student->admission_no }}</td>
                     <td class="text-center align-middle">{{ $student->student_name }}</td>
                     <td class="text-center align-middle">{{ $student->father_name }}</td>
+                    <td class="text-center align-middle">{{ $student->Grade->grade_name }}</td>
                     <td class="text-center align-middle">{{ $student->gender }}</td>
                     <td class="text-center align-middle">{{ $student->nic_no }}</td>
                     <td class="text-center align-middle">{{ $student->telephone_no }}</td>

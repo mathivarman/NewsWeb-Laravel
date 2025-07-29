@@ -26,6 +26,14 @@
                             <td class="text-center align-middle">Subject Type : {{ $subject->subject_type }}</td>
                         </tr>
                         <tr style="background: #f7fbff;">
+                            <td class="text-center align-middle">Enrolled Students:</td>
+                        </tr>
+                        @foreach($subject_students as $student)
+                        <tr style="background: #f7fbff;">
+                            <td class="text-center align-middle">{{ $student->student_name }}</td>
+                        </tr>
+                        @endforeach
+                        <tr style="background: #f7fbff;">
                             <td class="text-center align-middle">
                                 <a href="/subjects/{{ $subject->id }}/edit" class="btn btn-primary btn-sm me-1">Edit</a>
                                 <a href="/subjects" class="btn btn-info btn-sm me-1 text-white">Back</a>
