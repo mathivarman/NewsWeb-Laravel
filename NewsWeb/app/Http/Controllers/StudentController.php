@@ -1,6 +1,8 @@
 <?php
 namespace App\Http\Controllers;
 use App\Models\Student;
+use App\Models\Grade;
+use App\Models\Subject;
 use Illuminate\Http\Request;
 class StudentController extends Controller
 {
@@ -18,7 +20,9 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('students.create');
+        $grades = Grade::all();
+        $subjects= Subject::all();
+        return view('students.create', compact('grades', 'subjects'));
 
     }
 
@@ -37,7 +41,10 @@ class StudentController extends Controller
         $student->date_of_birth = $request->date_of_birth;
         $student->address = $request->address;
         $student->admission_date = $request->admission_date;
+        $student->grade_id = $request->grade_id;
+
         $student->save();
+
         return redirect('/students');
     }
 
@@ -57,8 +64,10 @@ class StudentController extends Controller
      */
     public function edit(string $id)
     {
+        $grades = Grade::all();
+        $subjects = Subject::all();
         $student = Student::find($id);
-        return view('students.edit', compact('student'));
+        return view('students.edit', compact('student', 'grades', 'subjects'));
     }
 
     /**

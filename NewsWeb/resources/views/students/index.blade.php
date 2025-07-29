@@ -4,7 +4,7 @@
 <section class="wrap__section">
         <div class="container">
             <div class="row">
-            <table class="table table-bordered table-hover shadow rounded" style="background: #fff;">
+            <table class="table table-bordered table-hover shadow rounded" style="background: #fff; ;">
             <thead>
                 <tr class="text-center" style="background: #1976d2;">
                     <th class="text-white" style="font-size: 1.1rem; letter-spacing: 1px;">Admission No</th>
@@ -22,7 +22,7 @@
             </thead>
             <tbody>
                 @foreach ($students as $student)
-                <tr style="background: #f7fbff;">
+                <tr style="background: #f7fbff; color:{{ $student->Grade->grade_color }}">
                     <td class="text-center align-middle">{{ $student->admission_no }}</td>
                     <td class="text-center align-middle">{{ $student->student_name }}</td>
                     <td class="text-center align-middle">{{ $student->father_name }}</td>

@@ -44,6 +44,23 @@
                     <textarea id="address" name="address" class="form-control" rows="3" required>{{ $student->address }}</textarea>
                 </div>
                 <div class="mb-3">
+                    <label for="grade_id" class="form-label fw-semibold text-primary">Grade</label>
+                    <select id="grade_id" name="grade_id" class="form-select" required>
+                        <option value="">Select Grade</option>
+                        @foreach($grades as $grade)
+                            <option value="{{ $grade->id }}" {{ $student->grade_id == $grade->id ? 'selected' : '' }}>{{ $grade->grade_name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="subject_ids" class="form-label fw-semibold text-primary">Subjects</label>
+                    <br>
+                    @foreach($subjects as $subject)
+                        <input type="checkbox" id="subject_ids" name="subject_ids[]" value="{{ $subject->id }}"
+                        {{ in_array($subject->id, $student->subjects->pluck('id')->toArray()) ? 'checked' : '' }}> {{ $subject->subject_name }}<br>
+                    @endforeach
+                </div>
+                <div class="mb-3">
                     <label for="admission_date" class="form-label fw-semibold text-primary">Admission Date</label>
                     <input type="date" id="admission_date" name="admission_date" class="form-control" value="{{ $student->admission_date }}" required>
                 </div>

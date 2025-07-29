@@ -26,6 +26,14 @@
                             <td class="text-center align-middle">Subject Type : {{ $subject->subject_type }}</td>
                         </tr>
                         <tr style="background: #f7fbff;">
+                            <td class="text-center align-middle">Subject Grades:</td>
+                        </tr>
+                        @foreach($subject_grades as $grade)
+                        <tr style="background: #f7fbff;">
+                            <td class="text-center align-middle">{{ $grade->grade_name }}</td>
+                        </tr>
+                        @endforeach
+                        <tr style="background: #f7fbff;">
                             <td class="text-center align-middle">Enrolled Students:</td>
                         </tr>
                         @foreach($subject_students as $student)

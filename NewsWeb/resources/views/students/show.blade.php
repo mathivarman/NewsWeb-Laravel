@@ -41,7 +41,7 @@
                             <td class="text-center align-middle">Admission Date : {{ $student->admission_date }}</td>
                         </tr>
                         <tr style="background: #f7fbff;">
-                            <td class="text-center align-middle">Grade : {{ $student->Grade->grade_name }}</td>
+                            <td class="text-center align-middle" style="color: {{ $student->Grade->grade_color }}">Grade: {{ $student->Grade->grade_name }}</td>
                         </tr>
                         <tr style="background: #f7fbff;">
                             <td class="text-center align-middle">Subjects :
