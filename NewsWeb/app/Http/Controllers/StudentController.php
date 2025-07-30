@@ -42,9 +42,8 @@ class StudentController extends Controller
         $student->address = $request->address;
         $student->admission_date = $request->admission_date;
         $student->grade_id = $request->grade_id;
-
         $student->save();
-
+        $student->subjects()->attach($request->subject_ids);
         return redirect('/students');
     }
 
@@ -85,7 +84,10 @@ class StudentController extends Controller
         $student->date_of_birth = $request->date_of_birth;
         $student->address = $request->address;
         $student->admission_date = $request->admission_date;
+        $student->subjects()->sync($request->subject_ids);
+        $student->grade_id = $request->grade_id;
         $student->save();
+
         return redirect('/students');
     }
 
